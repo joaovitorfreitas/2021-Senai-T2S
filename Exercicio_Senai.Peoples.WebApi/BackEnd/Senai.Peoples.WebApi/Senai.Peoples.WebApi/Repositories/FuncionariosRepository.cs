@@ -1,4 +1,5 @@
-﻿using Senai.Peoples.WebApi.Domains;
+﻿
+using Senai.Peoples.WebApi.Domains;
 using Senai.Peoples.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,13 +17,14 @@ namespace Senai.Peoples.WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(conexaoBanco))
             {
-                string queryUpdate = "UPDATE Funcionarios SET Nome = @Nome, Sobrenome = @Sobrenome WHERE idFuncionarios = @IDFUNCIONARIOS";
+                string queryUpdate = "UPDATE Funcionarios SET Nome = @Nome, Sobrenome = @Sobrenome, Datanascimento = @Datanascimento  WHERE idFuncionarios = @IDFUNCIONARIOS";
 
                 using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
                     cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
                     cmd.Parameters.AddWithValue("@Sobrenome", funcionario.Sobrenome);
                     cmd.Parameters.AddWithValue("@IDFUNCIONARIOS", id);
+                    cmd.Parameters.AddWithValue("@Datanascimento", funcionario.Datanascimento);
 
                     con.Open();
 
@@ -36,7 +38,7 @@ namespace Senai.Peoples.WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(conexaoBanco))
             {
-                string querySelectId = "SELECT idFuncionarios, Nome, Sobrenome FROM Funcionarios WHERE idFuncionarios = @IDFUNCIONARIO";
+                string querySelectId = "SELECT idFuncionarios, Nome, Sobrenome, Datanascimento FROM Funcionarios WHERE idFuncionarios = @IDFUNCIONARIO";
 
                 con.Open();
 
@@ -49,21 +51,20 @@ namespace Senai.Peoples.WebApi.Repositories
 
                     Datardr = cmd.ExecuteReader();
 
-                    if(Datardr.Read())
+                    if (Datardr.Read())
                     {
                         FuncionariosDomain funcionarioBuscado = new FuncionariosDomain()
                         {
                             idFuncionarios = Convert.ToInt32(Datardr["idFuncionarios"]),
                             Nome = Datardr["Nome"].ToString(),
-                            Sobrenome = Datardr["Sobrenome"].ToString()
+                            Sobrenome = Datardr["Sobrenome"].ToString(),
+                            Datanascimento = Convert.ToDateTime(Datardr["Datanascimento"])
                         };
 
                         return funcionarioBuscado;
                     }
 
                     return null;
-
-                    
                 }
             }
         }
@@ -72,7 +73,7 @@ namespace Senai.Peoples.WebApi.Repositories
         {
             using (SqlConnection con = new SqlConnection(conexaoBanco))
             {
-                string querySelectId = "SELECT idFuncionarios, Nome, Sobrenome FROM Funcionarios WHERE Nome = @NOMEFUNCIONARIO";
+                string querySelectId = "SELECT idFuncionarios, Nome, Sobrenome,Datanascimento FROM Funcionarios WHERE Nome = @NOMEFUNCIONARIO";
 
                 con.Open();
 
@@ -91,7 +92,8 @@ namespace Senai.Peoples.WebApi.Repositories
                         {
                             idFuncionarios = Convert.ToInt32(Datardr["idFuncionarios"]),
                             Nome = Datardr["Nome"].ToString(),
-                            Sobrenome = Datardr["Sobrenome"].ToString()
+                            Sobrenome = Datardr["Sobrenome"].ToString(),
+                            Datanascimento = Convert.ToDateTime(Datardr["Datanascimento"])
                         };
 
                         return funcionarioBuscado;
@@ -123,14 +125,16 @@ namespace Senai.Peoples.WebApi.Repositories
 
         public void Inserir(FuncionariosDomain novoFuncionario)
         {
-            using (SqlConnection con = new SqlConnection(conexaoBanco))
+            using (SqlConnection con = new SqlConnection(conexaoBanco)) 
             {
-                string queryInsert = "INSERT INTO Funcionarios(Nome, Sobrenome) VALUES (@Nome, @Sobrenome)";
+                string queryInsert = "INSERT INTO Funcionarios(Nome, Sobrenome, Datanascimento) VALUES (@Nome, @Sobrenome, @Datanascimento)";
 
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
+                    
                     cmd.Parameters.AddWithValue("@Nome", novoFuncionario.Nome);
                     cmd.Parameters.AddWithValue("@Sobrenome", novoFuncionario.Sobrenome);
+                    cmd.Parameters.AddWithValue("@DataNascimento", novoFuncionario.Datanascimento);
 
                     con.Open();
 
@@ -146,7 +150,7 @@ namespace Senai.Peoples.WebApi.Repositories
 
             using (SqlConnection con = new SqlConnection(conexaoBanco))
             {
-                string querySelectAll = "SELECT idFuncionarios, Nome, Sobrenome FROM Funcionarios";
+                string querySelectAll = "SELECT idFuncionarios, Nome, Sobrenome, Datanascimento FROM Funcionarios";
 
                 con.Open();
 
@@ -162,16 +166,18 @@ namespace Senai.Peoples.WebApi.Repositories
                         {
                             idFuncionarios = Convert.ToInt32(Datardr["idFuncionarios"]),
                             Nome = Datardr["Nome"].ToString(),
-                            Sobrenome = Datardr["Sobrenome"].ToString()
+                            Sobrenome = Datardr["Sobrenome"].ToString(),
+                            Datanascimento = Convert.ToDateTime(Datardr["Datanascimento"])
                         };
 
                         listaFuncionarios.Add(funcionarios);
                     }
-                        return listaFuncionarios;
+
+                    return listaFuncionarios;
 
                 }
 
-               
+
             }
 
 
