@@ -26,6 +26,12 @@ namespace Exercicios_Inlock_webApi.Controllers
             _usuarioRepository = new usuarioRepository();
         }
 
+        /// <summary>
+        /// Realiza o login
+        /// </summary>
+        /// <param name="user">é usado para chamar as propriedades da requisição</param>
+        /// <returns>Retorna um token caso usuario exista</returns>
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult Logiin(usuarioDomain user)
         {

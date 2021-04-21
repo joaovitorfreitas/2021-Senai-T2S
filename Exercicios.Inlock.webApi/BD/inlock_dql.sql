@@ -2,10 +2,15 @@ use inlock_games_tarde
 
 -- Lista todos os usuários
 select * from usuarios
+
+select * from tipoUsuario
+
 -- Listar todos os estudios
-select * from estudios
+select idEstudio,nomeEstudio from estudios
 -- Listar todos os jogos
 select  idJogo, nomeJogo, descricaoJogo, dataLancamento, valor, idEstudio from jogos
+
+delete from jogos where idJogo = 4
 -- Listar todos os jogos e seus respectivios estudios
 select idJogo, nomeJogo, nomeEstudio,descricaoJogo,dataLancamento,valor from jogos
 inner join estudios 

@@ -12,6 +12,10 @@ namespace Exercicios_Inlock_webApi.Repositories
     {
         private string ConexaoString = "Data Source=DESKTOP-42FT3LN\\SQLEXPRESS; Initial Catalog=inlock_games_tarde; User Id=joao; pwd=1234j;";
 
+        /// <summary>
+        /// Cadastra novos jogos
+        /// </summary>
+        /// <param name="novoJogo">propriedades passada no corpo do requisição</param>
         public void CadastrarJogo(jogoDomain novoJogo)
         {
             using (SqlConnection con = new SqlConnection(ConexaoString))
@@ -34,6 +38,10 @@ namespace Exercicios_Inlock_webApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Lista os jogos
+        /// </summary>
+        /// <returns> Retorna uma lista de jogos </returns>
         public List<jogoDomain> ListarJogo()
         {
             List<jogoDomain> TodosJogos = new List<jogoDomain>();

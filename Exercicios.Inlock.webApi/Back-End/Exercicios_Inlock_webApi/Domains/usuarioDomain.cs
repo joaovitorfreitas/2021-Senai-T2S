@@ -8,6 +8,9 @@ namespace Exercicios_Inlock_webApi.Domains
 {
     public class usuarioDomain
     {
+        /// <summary>
+        /// Propriedades da tabela Usuario
+        /// </summary>
         public int idUsuario { get; set; }
 
         [Required(ErrorMessage = "email não preenchido")]

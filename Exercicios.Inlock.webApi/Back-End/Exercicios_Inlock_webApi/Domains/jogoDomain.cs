@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Exercicios_Inlock_webApi.Domains
 {
+    /// <summary>
+    /// Propriedades da tabela jogo
+    /// </summary>
     public class jogoDomain
     {
         public int idJogo { get; set; }

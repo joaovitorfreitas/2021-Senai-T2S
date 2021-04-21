@@ -7,6 +7,9 @@ namespace Exercicios_Inlock_webApi.Domains
 {
     public class tipoUsuarioDomain
     {
+        /// <summary>
+        /// Propriedades da tabela TipoUsuario
+        /// </summary>
         public int idTipoUsuario { get; set; }
 
         public string titulo { get; set; }

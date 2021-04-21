@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {}
+    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {
+    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
+        "projectUniqueName": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
         "projectName": "Exercicios_Inlock_webApi",
-        "projectPath": "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
+        "projectPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
         "packagesPath": "C:\\Users\\DarkC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\obj\\",
+        "outputPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkC\\AppData\\Roaming\\NuGet\\NuGet.Config",

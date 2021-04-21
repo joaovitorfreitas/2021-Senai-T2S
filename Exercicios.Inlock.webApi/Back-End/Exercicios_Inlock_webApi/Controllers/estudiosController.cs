@@ -23,6 +23,10 @@ namespace Exercicios_Inlock_webApi.Controllers
             _estudioRepository = new estudioRepository();
         }
 
+        /// <summary>
+        /// Lista Eventos
+        /// </summary>
+        /// <returns> Uma lista de eventos</returns>
         [Authorize(Roles = "1,2")]
         [HttpGet]
         public IActionResult ListarEventos()

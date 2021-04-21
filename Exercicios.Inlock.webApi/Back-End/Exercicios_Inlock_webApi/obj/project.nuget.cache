@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oc6c1vLpIsIg4GwC0utETdwOO/u51ACt1AJLoaP+nxioUYP6lqZoj5co1f9bJMXDhN5DTyu7wBDPGAPP4DOmiw==",
+  "dgSpecHash": "jkLGtlsuAlONgWb+b0R4aWTIFcAFswWANMJekXqzZSTmmctheCd5MlsOBwtwBdnHd5BqpMr/i+56V6GCPMEtbw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DarkC\\source\\repos\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
+  "projectFilePath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Exercicios.Inlock.webApi\\Back-End\\Exercicios_Inlock_webApi\\Exercicios_Inlock_webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DarkC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
     "C:\\Users\\DarkC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

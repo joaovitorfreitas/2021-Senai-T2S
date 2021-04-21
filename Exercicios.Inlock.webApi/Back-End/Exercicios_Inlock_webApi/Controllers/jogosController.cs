@@ -26,9 +26,11 @@ namespace Exercicios_Inlock_webApi.Controllers
             {
                 _jogoRepository = new jogoRepository();
             }
-
+        /// <summary>
+        /// Lista todos jogos existente
+        /// </summary>
+        /// <returns>Lista de jogos</returns>
         [Authorize(Roles = "1,2")]
-        
         [HttpGet]
 
             public IActionResult ListarJogos()
@@ -36,6 +38,11 @@ namespace Exercicios_Inlock_webApi.Controllers
                 return Ok(_jogoRepository.ListarJogo());
             }
 
+        /// <summary>
+        /// Cadastra de jogos
+        /// </summary>
+        /// <param name="jogos">Propriedade passada como parametro de cadastro</param>
+        /// <returns>Jogo cadastrado</returns>
         [Authorize(Roles = "1")]
         [HttpPost]
             public IActionResult CadastrarJogo(jogoDomain jogos)

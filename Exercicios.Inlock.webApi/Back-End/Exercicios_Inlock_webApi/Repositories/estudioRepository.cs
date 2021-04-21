@@ -12,6 +12,10 @@ namespace Exercicios_Inlock_webApi.Repositories
     {
         private string ConexaoString = "Data Source=DESKTOP-42FT3LN\\SQLEXPRESS; Initial Catalog=inlock_games_tarde; User Id=joao; pwd=1234j;";
 
+        /// <summary>
+        /// Lista os estudios
+        /// </summary>
+        /// <returns> Retorna a lista de estudios </returns>
         public List<estudioDomain> ListarEstudios()
         {
             List<estudioDomain> EstudioLista = new List<estudioDomain>();
