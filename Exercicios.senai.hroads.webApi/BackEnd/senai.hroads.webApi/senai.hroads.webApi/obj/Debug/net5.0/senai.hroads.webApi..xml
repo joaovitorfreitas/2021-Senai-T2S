@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.hroads.webApi.</name>
+    </assembly>
+    <members>
+        <member name="M:senai.hroads.webApi_.Controllers.ClasseHabilidadesController.ListarClassesHabilidades">
+            <summary>
+            Retorna uma de ClasseHabilidades
+            </summary>
+            <returns>Uma lista de classes Habilidades</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClasseHabilidadesController.BuscarClassesHabilidades(System.Int32)">
+            <summary>
+            Retorna uma ClasseHabilidade
+            </summary>
+            <param name="id">id da classeHabilidade</param>
+            <returns>A classe Habilidade Pequisada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClasseHabilidadesController.AlterarClasseHabilidades(System.Int32,senai.hroads.webApi_.Domains.ClasseHabilidade)">
+            <summary>
+            Alterar uma Classe Habilidade
+            </summary>
+            <param name="id">id da classe Habilidade</param>
+            <param name="novaClasseHabilidade">Propriedade da Classe Habilidade</param>
+            <returns>Uma ClasseHabilidade Alterada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClasseHabilidadesController.CadastrarClasseHabilidades(senai.hroads.webApi_.Domains.ClasseHabilidade)">
+            <summary>
+            Retorna uma nova ClasseHabilidade
+            </summary>
+            <param name="novaClasseHabilidade">Propriedades da classe habilidade</param>
+            <returns>Uma nova Classe Habilidade Cadastrada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClasseHabilidadesController.DeletarClasseHabilidades(System.Int32)">
+            <summary>
+            Deleta uma ClasseHabilidade
+            </summary>
+            <param name="id">Id da ClasseHabilidade a Ser Deletada</param>
+            <returns>Uma ClasseHabilidade Deletada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClassesController.ListarClasses">
+            <summary>
+            retorna uma lista de classes
+            </summary>
+            <returns>Lista de classes</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClassesController.BuscarClasses(System.Int32)">
+            <summary>
+            Uma classe
+            </summary>
+            <param name="id">Id da classe passado</param>
+            <returns>A classe Pequisada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClassesController.AlterarClasse(System.Int32,senai.hroads.webApi_.Domains.Classe)">
+            <summary>
+            Altera uma Classe
+            </summary>
+            <param name="id">id da classe Classe</param>
+            <param name="novaClasse">Propriedade da Classe Classe</param>
+            <returns>Uma Classe Alterada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClassesController.CadastrarClasse(senai.hroads.webApi_.Domains.Classe)">
+            <summary>
+             Retorna uma nova Classe
+            </summary>
+            <param name="novaClasse">Propriedades da classe</param>
+            <returns>Uma Classe Habilidade Cadastrada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.ClassesController.DeletarClasse(System.Int32)">
+            <summary>
+            Deleta uma Classe
+            </summary>
+            <param name="id">Id da Classe a Ser Deletada</param>
+            <returns>Uma Classe Deletada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.HabilidadesController.ListarHabilidades">
+            <summary>
+            retorna uma lista de Habilidades
+            </summary>
+            <returns>Lista de Habilidades</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.HabilidadesController.BuscarHabilidades(System.Int32)">
+            <summary>
+            Uma Habilidade
+            </summary>
+            <param name="id">Id da Habilidade passada</param>
+            <returns>A Habilidade Pequisada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.HabilidadesController.AlterarHabilidades(System.Int32,senai.hroads.webApi_.Domains.Habilidade)">
+            <summary>
+            Altera uma Habilidade
+            </summary>
+            <param name="id">id da classe Habilidade</param>
+            <param name="novaHabilidade">Propriedade da Classe Habilidade</param>
+            <returns>Uma Habilidade Alterada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.HabilidadesController.CadastrarHabilidades(senai.hroads.webApi_.Domains.Habilidade)">
+            <summary>
+            Retorna uma nova Habilidade
+            </summary>
+            <param name="novaHabilidade">Propriedades da Habilidade</param>
+            <returns>Uma Habilidade Cadastrada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.HabilidadesController.DeletarHabilidades(System.Int32)">
+            <summary>
+            Deleta uma Habilidade
+            </summary>
+            <param name="id">Id da Habilidade a Ser Deletada</param>
+            <returns>Uma Habilidade Deletada</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.LoginController.Login(senai.hroads.webApi_.Domains.Usuario)">
+            <summary>
+            Metodo de login
+            </summary>
+            <param name="user">Propriedades email e senha</param>
+            <returns>Retorna um token </returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.PersonagemsController.ListarPersonagems">
+            <summary>
+            retorna uma lista de Personagem
+            </summary>
+            <returns>Lista de Personagem</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.PersonagemsController.BuscarPersonagems(System.Int32)">
+            <summary>
+            Um Personagem
+            </summary>
+            <param name="id">Id do Personagem passado</param>
+            <returns>o Personagem Pequisado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.PersonagemsController.AlterarPersonagems(System.Int32,senai.hroads.webApi_.Domains.Personagem)">
+            <summary>
+            Altera um Personagem
+            </summary>
+            <param name="id">id do Personagem</param>
+            <param name="novaPersonagem">Propriedade do Personagem</param>
+            <returns>Um Personagem Alterado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.PersonagemsController.CadastrarPersonagems(senai.hroads.webApi_.Domains.Personagem)">
+            <summary>
+            Retorna um novo Personagem
+            </summary>
+            <param name="novaPersonagem">Propriedades do Personagem</param>
+            <returns>Um Personagem Cadastrado</returns>  
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.PersonagemsController.DeletarPersonagems(System.Int32)">
+            <summary>
+             Deleta um Personagem
+            </summary>
+            <param name="id">Id do Personagem a Ser Deletado</param>
+            <returns>Um Personagem Deletado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoHabilidadesController.ListarTipoHabilidade">
+            <summary>
+            retorna uma lista de TipoHabilidade
+            </summary>
+            <returns>Lista de TipoHabilidade</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoHabilidadesController.BuscaTipoHabilidade(System.Int32)">
+            <summary>
+            Um TipoHabilidade
+            </summary>
+            <param name="id">Id do TipoHabilidade passado</param>
+            <returns>o TipoHabilidade Pequisado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoHabilidadesController.AlterarTipoHabilidade(System.Int32,senai.hroads.webApi_.Domains.TipoHabilidade)">
+            <summary>
+             Altera um TipoHabilidade
+            </summary>
+            <param name="id">id do TipoHabilidade</param>
+            <param name="AtualizarTipoHabilidade">Propriedade do TipoHabilidade</param>
+            <returns>Um TipoHabilidade Alterado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoHabilidadesController.CadastrarTipoHabilidade(senai.hroads.webApi_.Domains.TipoHabilidade)">
+            <summary>
+             Retorna um novo TipoHabilidade
+            </summary>
+            <param name="NovoTipoHabilidade">Propriedades do TipoHabilidade</param>
+            <returns>Um TipoHabilidade Cadastrado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoHabilidadesController.RemoverTipoHabilidade(System.Int32)">
+            <summary>
+             Deleta um TipoHabilidade
+            </summary>
+            <param name="id">Id do TipoHabilidade a Ser Deletado</param>
+            <returns>Um TipoHabilidade Deletado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoUsuariosController.ListarTipos">
+            <summary>
+            retorna uma lista de TipoUsuario
+            </summary>
+            <returns>Lista de TipoUsuario</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoUsuariosController.BuscarPorId(System.Int32)">
+            <summary>
+             Um TipoUsuario
+            </summary>
+            <param name="id">Id do TipoUsuario passado</param>
+            <returns>o TipoUsuario Pequisado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoUsuariosController.DeletarPorId(System.Int32)">
+            <summary>
+              Deleta um TipoUsuario
+            </summary>
+            <param name="id">Id do TipoUsuario a Ser Deletado</param>
+            <returns>Um TipoUsuario Deletado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoUsuariosController.AlterarTipoUsuario(System.Int32,senai.hroads.webApi_.Domains.TipoUsuario)">
+            <summary>
+             Altera um TipoUsuario
+            </summary>
+            <param name="id">id do TipoUsuario</param>
+            <param name="usuarioAtualizado">Propriedade do TipoUsuario</param>
+            <returns>Um TipoUsuario Alterado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.TipoUsuariosController.CadastrarTipoUsuario(senai.hroads.webApi_.Domains.TipoUsuario)">
+            <summary>
+             Retorna um novo TipoUsuario
+            </summary>
+            <param name="NovoTipoUsuario">Propriedades do TipoUsuario</param>
+            <returns>Um TipoUsuario Cadastrado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.UsuariosController.ListarPersonagems">
+            <summary>
+            retorna uma lista de Usuario
+            </summary>
+            <returns>Lista de Usuario</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.UsuariosController.BuscarUsuario(System.Int32)">
+            <summary>
+            Um Usuario
+            </summary>
+            <param name="id">Id do Usuario passado</param>
+            <returns>o Usuario Pequisado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.UsuariosController.AlterarPersonagems(System.Int32,senai.hroads.webApi_.Domains.Usuario)">
+            <summary>
+            Altera um Usuario
+            </summary>
+            <param name="id">id do Usuario</param>
+            <param name="novaUsuario">Propriedade do Usuario</param>
+            <returns>Um Usuario Alterado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.UsuariosController.CadastrarUsuario(senai.hroads.webApi_.Domains.Usuario)">
+            <summary>
+             Retorna um novo Usuario
+            </summary>
+            <param name="novaUsuario">Propriedades do Usuario</param>
+            <returns>Um Usuario Cadastrado</returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Controllers.UsuariosController.DeletarUsuario(System.Int32)">
+            <summary>
+            Deleta um Usuario
+            </summary>
+            <param name="id">Id do Usuario a Ser Deletado</param>
+            <returns>Um Usuario Deletado</returns>
+        </member>
+        <member name="T:senai.hroads.webApi_.Interfaces.ITipoUsuarioRepository">
+            <summary>
+            Interface onde definimos do Tipo Usúario 
+            </summary>
+        </member>
+        <member name="M:senai.hroads.webApi_.Repositories.TipoUsuarioRepository.AtualizarTipoUsuario(System.Int32,senai.hroads.webApi_.Domains.TipoUsuario)">
+            <summary>
+             Atualiza um Tipo de usuario 
+            </summary>
+            <param name="id">id do tipo de usuario atualizado</param>
+            <param name="AtualizarTipoUsuario"> Propriedade passadas do tipo de usuario Atualizado </param>
+        </member>
+        <member name="M:senai.hroads.webApi_.Repositories.TipoUsuarioRepository.BuscarTipoUsuario(System.Int32)">
+            <summary>
+            Buscar um tipo de usuario
+            </summary>
+            <param name="id">id do Tipo de usuario buscado</param>
+            <returns>retorna um Tipo de usuario buscado </returns>
+        </member>
+        <member name="M:senai.hroads.webApi_.Repositories.TipoUsuarioRepository.CadastrarTipoUsuario(senai.hroads.webApi_.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um tipo de usuario
+            </summary>
+            <param name="CadastrarTipoUsuario">Propriedades do tipo usuario a serem passadas</param>
+        </member>
+        <member name="M:senai.hroads.webApi_.Repositories.TipoUsuarioRepository.DeletarTipoUsuario(System.Int32)">
+            <summary>
+            Deleta um Tipo de usuario
+            </summary>
+            <param name="id">Id do Tipo de usuario deletado</param>
+        </member>
+        <member name="M:senai.hroads.webApi_.Repositories.TipoUsuarioRepository.ListarTipoUsuario">
+            <summary>
+             Lista Todos Tipo De Usuarios
+            </summary>
+            <returns> Retorna uma lista Tipo de usuarios</returns> 
+        </member>
+    </members>
+</doc>
