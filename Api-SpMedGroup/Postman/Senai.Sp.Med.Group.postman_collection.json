@@ -1,0 +1,479 @@
+{
+	"info": {
+		"_postman_id": "d33cbb2c-2684-4f5c-8ac9-8cfc60c7475a",
+		"name": "Senai.Sp.Med.Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta",
+			"item": [
+				{
+					"name": "Listar",
+					"item": [
+						{
+							"name": "PacientesListar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODA5NzQsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.-OVjEiF6WPiQspyWdE-hqBW_emtfa_1kSyBoIbE8-8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/pacientes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MedicosListar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODA5NzQsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.-OVjEiF6WPiQspyWdE-hqBW_emtfa_1kSyBoIbE8-8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Medicos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Medicos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ConsultaListarAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODA5NzQsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.-OVjEiF6WPiQspyWdE-hqBW_emtfa_1kSyBoIbE8-8c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/ListarTodos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"ListarTodos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MedicosConsultaListar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjIiLCJleHAiOjE2MjU1ODE0MTYsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.0DI0RbG0RkLpsOuIdJ2BezP0pDLWCrELI-HtCFZeZss",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/ConsultasMedicosRelacionada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"ConsultasMedicosRelacionada"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PacientesConsultaListar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmlhbmFAb3V0bG9vay5jb20iLCJqdGkiOiIxMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MjU1ODQxOTIsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.CBDDjqqAsdoGHiV1KqE5kWSib2hdsbdde_5NNItYqRM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/ConsultasPacientesRelacionada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"ConsultasPacientesRelacionada"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Alterar",
+					"item": [
+						{
+							"name": "PatchConsulta_Descricao",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvYmVydG8ucG9zc2FybGVAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjIiLCJleHAiOjE2MjU1ODI3OTMsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.1cDE7du9jhLs_bmUtu_nwPp-2se0v-OXasMlog1_xEg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descricao\": \"Febre Amarela\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/medicoAlterarDesc/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"medicoAlterarDesc",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PatchConsulta_Situacao",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODQwMDUsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.DkM1guJ1z1P0cRcFoTYuuKXwnooyLljCeeR_fIO_mH0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idSituacao\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/medicoAlterarSit/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"medicoAlterarSit",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BuscarId",
+					"item": [
+						{
+							"name": "PacienteConsultaBuscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmlhbmFAb3V0bG9vay5jb20iLCJqdGkiOiIxMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MjU1ODQxOTIsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.CBDDjqqAsdoGHiV1KqE5kWSib2hdsbdde_5NNItYqRM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/BuscarRelacionadoPaciente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"BuscarRelacionadoPaciente",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MedicoConsultaBuscar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpY2FyZG8ubGVtb3NAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjIiLCJleHAiOjE2MjU1ODQxMDEsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.4G-6Mox8-5qX-6OB7pCDOgv4LIpKYJmqQOjxMSDqcJc",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum/BuscarRelacionadoMedico/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum",
+										"BuscarRelacionadoMedico",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cadastrar / Login",
+					"item": [
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Email\" : \"adm@gmail.com\",\r\n    \"Senha\" : \"adm123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ConsultaCadastrar",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODE4NDAsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.AwoleORD231ttDc8r0hzvAxTDys3jpuBnRd6GsFI3Gk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idMedico\" : 1,\r\n    \"idPaciente\" : 7,\r\n    \"idSituacao\": 2,\r\n    \"dataConsulta\": \"2021-04-14 00:00:00.000\",\r\n    \"descricao\": \"gripe\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Consultum",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Consultum"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CadastrarClinica",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODE4NDAsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.AwoleORD231ttDc8r0hzvAxTDys3jpuBnRd6GsFI3Gk",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"CNPJ\": \"86400902000140\",\r\n    \"horarioAbertura\": \"07:30:00.0000000\",\r\n    \"horarioFechamento\":\"18:00:00.0000000\",\r\n    \"endereco\": \"Av rua sofia 432\",\r\n    \"nomeFantasia\": \"Clinica Alvarez\",\r\n    \"razaoSocial\": \"Sp Med Group\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Clinicas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Clinicas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CadastrarUsuario",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJleHAiOjE2MjU1ODQzMjcsImlzcyI6IlNwTWVkLVdlYkFwaSIsImF1ZCI6IlNwTWVkLVdlYkFwaSJ9.nZkv3FIC4msRoaBIxc_TeOWIrJMMTVvUKvrvUCvr8UM",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idTipoUsuario\": 1,\r\n    \"email\": \"adm@gmail.com\",\r\n    \"senha\": \"adm123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/Usuarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"Usuarios"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

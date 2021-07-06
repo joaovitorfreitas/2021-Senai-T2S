@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sp-Med-Group</name>
+    </assembly>
+    <members>
+        <member name="M:Sp_Med_Group.Controllers.ClinicasController.Cadastrar(Sp_Med_Group.Domains.Clinica)">
+            <summary>
+            Cadastra uma nova Clinica
+            </summary>
+            <param name="novaClinica"> objeto da clinica a ser passada</param>
+            <returns> retorna uma clinica cadastrada</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.BuscarPaciente(System.Int32,System.Int32)">
+            <summary>
+            Busca a uma consulta de um Paciente relacionado
+            </summary>
+            <param name="idConsulta">Id da consulta buscada</param>
+            <param name="idPacientes">Id do Paciente relacionado</param>
+            <returns>retorna uma consulta pesquisa do Paciente logado</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.BuscarMedico(System.Int32,System.Int32)">
+            <summary>
+            Busca a uma consulta de um medico relacionado
+            </summary>
+            <param name="idConsulta">Id da consulta buscada</param>
+            <param name="idMedico">Id do medico relacionado</param>
+            <returns> retorna uma consulta pesquisa do medico logado </returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.ListarMedicos">
+            <summary>
+            Lista todos as consultas medicos
+            </summary>
+            <returns>uma consulta onde está associado ao medico logado</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.ListarPacientes">
+            <summary>
+             Lista todos as consultas pacientes
+            </summary>
+            <returns>uma consulta onde está associado ao paciente logado</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.CadastrarConsulta(Sp_Med_Group.Domains.Consultum)">
+            <summary>
+            Cadastra uma nova consulta
+            </summary>
+            <param name="novaConsulta">Objeto da consulta a ser passado</param>
+            <returns> uma nova consulta cadastrada</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.PatchDescricao(System.Int32,Sp_Med_Group.Domains.Consultum)">
+            <summary>
+            Altera Descrição atual da consulta
+            </summary>
+            <param name="id">Id da descrição da consulta ser alterada</param>
+            <param name="Descricao">descricao ser alterada</param>
+            <returns> retorna uma consulta com uma descrição alterada</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.ListarTodos">
+            <summary>
+             lista de consulta
+            </summary>
+            <returns> uma lista de todas as consultas</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.ConsultumController.PatchSituacao(System.Int32,Sp_Med_Group.Domains.Situacao)">
+            <summary>
+            Altera a situação da consulta
+            </summary>
+            <param name="id">id da consulta a ser passada</param>
+            <param name="status">status a alterar da consulta</param>
+            <returns>um status alterado de consulta</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.LoginController.Login(Sp_Med_Group.ViewModel.LoginViewModel)">
+            <summary>
+            Loga um usuario
+            </summary>
+            <param name="login">Objeto do login a ser passado</param>
+            <returns>retorna um usuario logado</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.MedicosController.Listar">
+            <summary>
+            Lista de medicos
+            </summary>
+            <returns> Lista de todos os Medicos existentes </returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.PacientesController.Listar">
+            <summary>
+            Lista de pacientes
+            </summary>
+            <returns> Lista de todos os Pacientes existentes</returns>
+        </member>
+        <member name="M:Sp_Med_Group.Controllers.UsuariosController.CadastrarUser(Sp_Med_Group.Domains.Usuario)">
+            <summary>
+            Cadastra um usuario
+            </summary>
+            <param name="novoUsuario">Objeto do usuario a ser cadastrado</param>
+            <returns>um novo usuario cadastrado</returns>
+        </member>
+    </members>
+</doc>
