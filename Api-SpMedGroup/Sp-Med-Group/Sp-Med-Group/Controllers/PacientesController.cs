@@ -15,12 +15,12 @@ namespace Sp_Med_Group.Controllers
     [ApiController]
     public class PacientesController : ControllerBase
     {
-        private IMedico _Medico { get; set;  }
+        private IPaciente _Paciente { get; set;  }
 
 
         public PacientesController()
         {
-            _Medico = new MedicoRepository();
+            _Paciente = new PacienteRepository();
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Sp_Med_Group.Controllers
         [HttpGet]
         public IActionResult Listar()
         {
-            return Ok(_Medico.Listar());
+            return Ok(_Paciente.Listar());
         }
     }
 }

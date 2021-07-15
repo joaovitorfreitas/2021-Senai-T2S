@@ -49,8 +49,8 @@ namespace Sp_Med_Group.Controllers
 
                 new Claim(JwtRegisteredClaimNames.Email, UsuarioLogin.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, UsuarioLogin.IdUsuario.ToString()),
-                new Claim(ClaimTypes.Role, UsuarioLogin.IdTipoUsuario.ToString())
-
+                new Claim(ClaimTypes.Role, UsuarioLogin.IdTipoUsuario.ToString()),
+                new Claim(JwtRegisteredClaimNames.NameId, UsuarioLogin.IdTipoUsuario.ToString())
                 };
 
                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("SpMed-chave-autenticacao"));

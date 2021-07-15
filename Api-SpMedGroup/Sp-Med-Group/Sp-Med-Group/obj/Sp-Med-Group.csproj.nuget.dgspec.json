@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj": {}
+    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Api-SpMedGroup\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj": {
+    "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Api-SpMedGroup\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj",
+        "projectUniqueName": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Api-SpMedGroup\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj",
         "projectName": "Sp-Med-Group",
-        "projectPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj",
+        "projectPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Api-SpMedGroup\\Sp-Med-Group\\Sp-Med-Group\\Sp-Med-Group.csproj",
         "packagesPath": "C:\\Users\\DarkC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Sp-Med-Group\\Sp-Med-Group\\obj\\",
+        "outputPath": "C:\\Users\\DarkC\\Desktop\\2021-Senai-T2S\\Api-SpMedGroup\\Sp-Med-Group\\Sp-Med-Group\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DarkC\\AppData\\Roaming\\NuGet\\NuGet.Config",

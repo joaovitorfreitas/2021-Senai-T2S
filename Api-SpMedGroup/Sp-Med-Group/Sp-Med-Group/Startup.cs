@@ -37,6 +37,16 @@ namespace Sp_Med_Group
                 c.IncludeXmlComments(xmlPath);
             });
 
+             services.AddCors(options => {
+                options.AddPolicy("CorsPolicy",
+                    builder => {
+                        builder.WithOrigins("http://localhost:3000", "http://localhost:19002", "http://localhost:19006", "http://192.168.0.107:19000", "http://192.168.0.107:19006")
+                                                                    .AllowAnyHeader()
+                                                                    .AllowAnyMethod();
+                    }
+                );
+            });
+
 
             services
                 .AddAuthentication(options =>
@@ -70,6 +80,8 @@ namespace Sp_Med_Group
             }
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
 
             app.UseSwagger();
 
